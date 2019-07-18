@@ -1,0 +1,55 @@
+div,p{margin:0px;padding:0px;}
+.cart_tool{width:100%;height:50px;line-height: 50px;}
+.cart_tool div:first-child{float: left; width: 100px;}
+.cart_tool div:last-child{float: right; width: 100px;}
+.cart_tool .cart_jdt{float:left; width:500px;height: 50px; margin-left:200px;font-size: 12px;}
+.cart_tool .cart_jdt p{display: inline-block;position: relative;}
+
+.jxgw{text-align: right;}
+.jxgw a{text-decoration: underline;color: #000;}
+.cart_tool .cart_jdt p.yd{padding-left:25px; color: #ccc;}
+.cart_tool .cart_jdt p.yd:before{content: '';position: absolute;left:0px;top:15px; width:15px;height: 15px;border-radius: 10px;border:2px solid #ccc;background: #f6f6f6;}
+.cart_tool .cart_jdt p.h_g{width:50px;border-top:1px solid #000; height: 5px; margin:0px 20px;}
+.cart_tool .cart_jdt p.cur:before{border:2px solid #f00;}
+.cart_tool .cart_jdt p.cur:after{background: #f00;width:7px;height: 7px;content: '';border-radius: 50%;position: absolute;left:6.5px;top:20.5px;}
+.cartlist{width:100%;font-size: 12px;}
+.cartlist .car_t{height: 30px;line-height: 30px;width:100%;background: #e9e9e9;}
+.cartlist .car_t p{float:left;text-align: center;}
+.cartlist .car_t p:first-child{width:35%;}
+.cartlist .car_t p:nth-child(2){width:20%;}
+.cartlist .car_t p:nth-child(3){width:15%;}
+.cartlist .car_t p:nth-child(4){width:20%;}
+.cartlist .car_t p:nth-child(5){width:10%;}
+.cartlist .car_f{height: 30px;line-height: 30px;width:100%;background: #e9e9e9;}
+.cartlist .car_f p{float:left;text-align: center;}
+.cartlist .car_f p:first-child{width:5%;}
+.cartlist .car_f p:nth-child(2){width:5%;}
+.cartlist .car_f p:nth-child(3){width:5%;}
+.cartlist .car_f p:nth-child(4){width:55%; text-align: right}
+.cartlist .car_f p:nth-child(5){width:10%;}
+.cartlist .car_f p:nth-child(6){width:20%; }
+.cartlist .car_f p span{color: #f00;}
+.cart_tool .cart_jdt p.cur{color: #f00;}
+.cartlist .car_f p button{height:30px;line-height: 30px;float: right; width:150px;text-align: center;background: #8e8e8e;border:0px;color: #fff;}
+
+.car_list_content{width:100%;}
+
+.car_list_content li{width:100%;height: 150px;list-style: none;border-bottom: 1px dashed #ccc;}
+.car_list_content li >div{float: left;}
+.car_list_content li .spinfo{width:35%;}
+.car_list_content li .spinfo p{float: left;}
+.car_list_content li .spinfo p:first-child{width:10%;line-height: 150px;}
+.car_list_content li .spinfo p:nth-child(2){width:135px;padding:2% 0%; }
+.car_list_content li .spinfo p:nth-child(2) img{width:120px;overflow: hidden; margin: 4% 5%;max-height: 120px;}
+.car_list_content li .spinfo .sp_content{width:35%;}
+.car_list_content li .spinfo .sp_content span{display: block;line-height: 25px;}
+.car_list_content li .spinfo .sp_content span:first-child{overflow: hidden;width:100%;height: 25px;padding-top: 20px;}
+
+
+.car_list_content li >div:nth-child(2),.car_list_content li >div:nth-child(4){text-align: center; width: 20%;line-height: 150px;}
+.car_list_content li >div:nth-child(3){width:15%;    margin-left: 5%;}
+.car_list_content li >div:last-child{line-height: 150px;}
+.car_list_content li .car_add{line-height: 150px;}
+.car_list_content li .car_add span:first-child,.car_list_content li .car_add span:last-child{width:20px;height: 20px;margin-top:37%; line-height: 20px;text-align: center;border:1px solid #ccc;display: block;float:left;}
+.car_list_content li .wftxt{float:left;display: block;width:30px;}
+.car_list_content li .wftxt .txt{border:none;line-height: 20px;height: 20px;text-align: center;width:30px;}

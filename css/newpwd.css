@@ -1,0 +1,131 @@
+body,ul,li,p,span,a,i,input{margin: 0; padding: 0;}
+ul li{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #262626;
+}
+.my_small{
+    font-size: 12px;
+}
+.my_f_14{
+    font-size:14px;
+}
+.con_nav{
+    width: 1160px;
+    margin: 0 auto;
+}
+.con_main{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.con_nav>a{
+    float: left;
+    color: #777;
+    margin-left: 15px;
+}
+.con_nav span{
+    float: left;
+    color:#777;
+    margin: 0 20px;
+}
+.con_left{
+    width:180px;
+    text-align: center;
+    background-color:#fff;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    margin:20px 20px 20px 0;
+}
+.nav_l_t{
+    height:135px;
+    cursor: pointer;
+    padding:10px 0;
+    border-bottom: 1px solid #a10000;
+}
+.nav_l_t>a img{
+    display: block;
+    margin: 0 auto;
+}
+.nav_l_t>a{
+    display: block;
+}
+.nav_l_t p a:hover{
+    color:#a10000;
+    text-decoration:underline;
+}
+.nav_l_t p{
+    width: 70%;
+    margin: 0 auto;
+}
+.nav_l_d{
+    background-color: #fff;
+    text-align: center;
+}
+.nav_l_d ul li a{
+    color:#757575;
+}
+.nav_l_d ul li a:hover{
+    color:#a10000;
+}
+.con_right{
+    width: 840px;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    padding: 50px;
+    margin: 20px 0;
+}
+.con_right h2{
+    font-weight: normal;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.con_right form p span{
+    width:140px;
+    text-align: right;
+    font-size: 14px;
+    color:#262626;
+    display: inline-block;
+}
+.con_right input[type=checkbox]{
+    margin-right: 5px;
+    vertical-align: -2px;
+}
+.con_right input[type=text],input[type=password]{
+    width: 240px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e0e0e0;
+    text-indent: 10px;
+    display: inline-block;
+}
+.con_right form p:first-child{
+    padding-bottom: 15px;
+}
+.con_right form p{
+    padding-bottom: 10px;
+}
+.ml-180{
+    margin-left: 180px;
+    color:#757575;
+}
+.con_right form img{
+    vertical-align: middle;
+    border:1px solid #e0e0e0;
+    margin-left: 5px;
+}
+.con_right form input[type=submit]{
+    width: 61px;
+    background-color:#a10000;
+    color: #fff;
+    padding: 5px;
+    margin: 20px 0 0 30%;
+}

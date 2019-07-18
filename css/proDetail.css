@@ -1,0 +1,251 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#detail_main>.con_nav{
+    height: 42px;
+    line-height: 42px;
+}
+#detail_main.m_t50{
+    margin-top: 50px;
+}
+.pro_img{
+    width: auto;
+}
+.pro_img .pro_img_l{
+    width:580px;
+}
+.pro_img_l img{
+    width: 580px;
+    height: 580px;
+}
+.pro_img_l ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.pro_img_l ul li{
+    /*float: left;*/
+    list-style: none;
+}
+.pro_img_l ul li img{
+    width: 85px;
+    height: 85px;
+}
+.mt_35{
+    margin-top:35px;
+}
+/* .pro_img_r*/
+.pro_img .pro_img_r{
+    width: 500px;
+}
+.pro_img_r_d1{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.pro_img_r_d1 h2{
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.pro_img_r_d1 p{
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.pro_img_r_d1 span{
+    color: #a10000;
+    font-size: 24px;
+}
+.pro_img_r_d2{
+    padding: 30px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+.pro_img_r_d2 p{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.pro_img_r_d2 ul{
+    width: 270px;
+    display: flex;
+    margin: 20px 0 0 10px;
+    justify-content: space-between;
+}
+.pro_img_r_d2 ul li{
+    list-style: none;
+}
+.pro_img_r_d2 span{
+    color: #a10000;
+    font-size: 12px;
+}
+.pro_img_r_d2 .p1{
+    margin-top: 20px;
+}
+.pro_img_r_d2_d{
+     margin: 20px 0 35px 10px;
+ }
+.pro_img_r_d2_d img{
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+.pro_img_r_d2_d>span{
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    color: #000000;
+}
+.pro_img_r_d3{
+    margin-top: 30px;
+}
+.pro_img_r_d3 a{
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    background-color: #C10000;
+}
+.pro_img_r_d3 a:first-child>span{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.pro_img_r_d3 a:last-child{
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.pro_img_r_d3 a:last-child{
+    width:168px;
+    height: 38px;
+}
+.pro_img_r_d3 a:last-child>span{
+    color:#000;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+#pro_details{
+    margin-top: 30px;
+}
+#pro_details.de_t_l{
+    width: 945px;
+}
+.de_t_top{
+    height: 40px;
+    line-height: 40px;
+    border-top:1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 30px;
+}
+.de_t_top a{
+    font-size: 12px;
+    margin-left: 20px;
+}
+.pl{
+    border-bottom: 1px dashed #dbdbdb;
+    /* height: 138px; */
+    margin-bottom: 10px;
+}
+.pl_r{
+    width:852px;
+    margin-left: 15px;
+}
+.pl_r p{
+    font-size: 12px;
+    padding-left:10px;
+    line-height: 30px;
+}
+.pl_r ul li{
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    padding: 2px;
+    border: 1px solid #f0f0f0;
+}
+.pl_r p:last-child{
+    display: block;
+    clear: both;
+}
+.pl_r p:last-child span{
+    color:#b0b0b0;
+    font-size:12px;
+}
+/* de_r */
+#pro_details .de_r{
+    border:1px solid #dbdbdb;
+}
+#pro_details .de_r h4{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #f6f6f6;
+    font-size: 14px;
+}
+#pro_details .tuijian{
+    padding:20px;
+}
+#pro_details .tuijian a{
+    display: block;
+    margin-bottom: 20px;
+}
+#pro_details .tuijian a dd{
+    line-height: 30px;
+    font-size: 12px;
+}
+.gesslike{
+    background-color: #fbfbfb;
+    width: 100%;
+    margin-top: 23px;
+    margin:0 auto;
+}
+.gesslike>p{
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+#footLunbo{
+    position: relative;
+    margin-top:50px;
+}
+#footLunbo ul li{
+    float: left;
+    margin:10px;
+    width: 216px;
+    height: 300px;
+}
+#footLunbo ul li>img,span{
+    display: block;
+    font-size:14px;
+}
+#footLunbo .m10{
+    margin:10px;
+}
+#footLunbo ul li span:last-child{
+    color:#c10000;
+}
+.outlunbo{
+    margin-left:130px;
+}
+.f_l{float: left;}
+.f_r{float: right;}
+.prev_p{
+    width:50px;
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+}
+.prev_left{
+    left:30px;
+}
+.prev_right{
+    right:30px;
+}
+.prev{
+    width:50px; height: 50px;
+}
+.outlunbo{
+    overflow: hidden;
+}

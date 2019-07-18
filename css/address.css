@@ -1,0 +1,30 @@
+.con_right .conn{
+    display: flex;
+    justify-content: space-around;
+}
+.con_right .con_l{
+    width: 268px;
+    height: 178px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+.con_right .con_r{
+    width: 244px;
+    height: 178px;
+    border: 1px solid #e0e0e0;
+}
+.con_right .con_l a{
+    display: block;
+    width: 30px;
+    margin: 60px auto 0;
+}
+.con_right .con_r h4{
+    font-weight: normal;
+    margin: 20px 0 20px 20px;
+    color: #262626;
+}
+.con_right .con_r p{
+    font-size: 12px;
+    margin:0 0 5px 20px;
+    color: #262626;
+}

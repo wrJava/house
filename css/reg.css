@@ -1,0 +1,21 @@
+*{
+margin:0;
+padding:0;
+}
+.bg_img{
+	background:url("../img/temp/20.jpg") no-repeat;
+	background-size:100% 100%;
+	width:100%;
+	height:1000px;
+}
+.bg_img form{
+	width:480px;
+	height:530px;
+	border:1px solid #dbdbdb;
+	text-align:center;
+	padding:20px 0;
+	background:#fff;
+	position:fixed;
+	right: 143px;
+    top: 20%;
+}
