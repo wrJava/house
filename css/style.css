@@ -467,6 +467,17 @@ a:link{
 	/* height:300px; */
 	margin:5px 8px;
 }
+.bg_bo ul li>a:first-child{
+	display: block;
+	width: 268px;
+	height: 268px;
+}
+.bg_bo ul li>a:first-child img{
+	max-width: 268px;
+	max-height: 268px;
+	margin: 0 auto;
+	overflow: hidden;
+}
 .bg_bo li p a{
 	color:#000;
 	font-size:12px;
@@ -524,6 +535,11 @@ a:link{
 content:"";
 clear:both;
 display:block;
+}
+.ft_list li img{
+	max-width: 268px;
+	max-height: 268px;
+	margin: 0 auto;
 }
 #yincang_nav{
 	display: flex;

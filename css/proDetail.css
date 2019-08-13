@@ -10,11 +10,28 @@
 #detail_main.m_t50{
     margin-top: 50px;
 }
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
 .pro_img{
     width: auto;
 }
 .pro_img .pro_img_l{
     width:580px;
+}
+.pro_del_img {
+    width: 580px;
+}
+.pro_del_img {
+    list-style: none;
+}
+.pro_del_img img{
+    list-style: none;
+    width: 580px;
+    height: auto;
 }
 .pro_img_l img{
     width: 580px;
@@ -71,7 +88,12 @@
     margin: 20px 0 0 10px;
     justify-content: space-between;
 }
-.pro_img_r_d2 ul li{
+/* .pro_img_r_d2 ul li{
+    list-style: none;
+} */
+.colorList li>img{
+    width: 70px;
+    height: 70px;
     list-style: none;
 }
 .pro_img_r_d2 span{
@@ -103,6 +125,9 @@
 .pro_img_r_d3 a{
     width: 170px;
     height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 5px;
     text-align: center;
     background-color: #C10000;
 }
@@ -129,7 +154,7 @@
 #pro_details{
     margin-top: 30px;
 }
-#pro_details.de_t_l{
+#pro_details .de_t_l{
     width: 945px;
 }
 .de_t_top{
@@ -189,9 +214,35 @@
 }
 #pro_details .tuijian a{
     display: block;
+    width: 161px;
+    /* height: 367px; */
+    margin-bottom: 20px;
+}
+.u_headers{
+    width:50px;
+    heigth:50px;
+    border-radius: 50px;
+}
+/* #pro_details .tuijian a dl{
+    width: 161px;
+    height: 367px;
+    margin-bottom: 20px;
+} */
+/* #pro_details .tuijian a dl dt{
+    width: 161px;
+    height: 247px;
+    margin-bottom: 20px;
+} */
+#pro_details .tuijian a dl dt img{
+    display: block;
+    max-width: 161px;
+    height: auto;
+    max-height: 243px;
     margin-bottom: 20px;
 }
 #pro_details .tuijian a dd{
+    display: block;
+    width: 168px;
     line-height: 30px;
     font-size: 12px;
 }
@@ -216,7 +267,7 @@
     width: 216px;
     height: 300px;
 }
-#footLunbo ul li>img,span{
+#footLunbo ul li>img,#footLunbo ul li span{
     display: block;
     font-size:14px;
 }
@@ -224,10 +275,12 @@
     margin:10px;
 }
 #footLunbo ul li span:last-child{
-    color:#c10000;
+    color:#000;
 }
 .outlunbo{
-    margin-left:130px;
+    margin-left:110px;
+    margin-right:110px;
+    height:300px;
 }
 .f_l{float: left;}
 .f_r{float: right;}
@@ -246,6 +299,19 @@
 .prev{
     width:50px; height: 50px;
 }
+.outlunbo ul li{
+    height: 300px;
+    overflow: hidden;
+}
 .outlunbo{
+    overflow: hidden;
+}
+.outlunbo ul li>a:first-child{
+    width: 216px;
+    height: 300px;
+}
+.outlunbo ul li>a:first-child img{
+    max-width: 216px;
+    max-height: 300px;
     overflow: hidden;
 }
