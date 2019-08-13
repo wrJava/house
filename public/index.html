@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+	<link rel="stylesheet" href="css/style.css">
+	 <!-- 导入css-->
+	 <!--<link rel="stylesheet" href="../boot/css/bootstrap.css"/>-->
+	 <!-- 导入3个js 三个js要求有顺序要求-->
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/common.js"></script>
+
+	 <!--<script src="../boot/js/bootstrap.min.js"></script>-->
+ </head>
+ <body>
+<!-- 固定定位 -->
+ <div class="gd_img">
+	 <a href="javascript:;"></a>
+	 <a href="javascript:;"></a>
+	 <a href="javascript:;"></a>
+	<a href="#"></a>
+ </div>
+<!-- 头部 -->
+<div class="header"></div>
+	<!-- 	banner部分	 -->
+	<main id="main">
+		<div id="banner">
+		  <div id="btn-left"></div>
+		  <ul id="ul-imgs" style="width:8000px; margin-left:0px;">
+			<li><a href="javascript:;"><img src="img/banner1.jpg"></a></li>
+			<li><a href="javascript:;"><img src="img/banner2.jpg"></a></li>
+			<!--注意！最后li个数要比实际图片张数多1，最后一个li里的img是重复第一张li的图片-->
+			<li><a href="javascript:;"><img src="img/banner1.jpg"></a></li>
+		  </ul>
+		 
+		  <div id="btn-right"></div>
+		</div>
+	  </main>
+
+	<!-- Three Img-->
+	<div class="thImg">
+		<div>
+			<a href="#">
+				<img src="img/i1.jpg" alt="">
+			</a>
+			<a href="#">
+				<img src="img/i2.jpg" alt="">
+			</a>
+			<a href="#">
+				<img src="img/i3.jpg" alt="">
+			</a>
+		</div>
+	</div>
+<!-- 内容部分 -->
+	<div class="content">
+		<!-- 	第一部分图	 -->
+		<div class="wrapper_c">
+			<p class="cloumn_title">
+				<!-- <p>水心 · 特色</p>
+				<p>UNIQUE TRUE LOVE</p> -->
+				<img src="img/ih1.jpg" alt="">
+			</p>
+			<div class="top">
+				<a href="#">
+					<img src="img/n1.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="img/n2.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="img/n3.jpg" alt="">
+				</a>
+			</div>
+			<div class="top">
+				<a href="#">
+					<img src="img/n4.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="img/n5.jpg" alt="">
+				</a>
+				<a href="#">
+					<img src="img/n6.jpg" alt="">
+				</a>
+			</div>
+			<p>
+				<img src="img/ih2.jpg" alt="">
+			</p>
+			<!-- 第二部分图加价格 -->
+			<div class="flower top">
+				<ul class="f_ul" id="towlist">
+					<!-- <li>
+						<a href="#">
+							<img src="img/flo1.jpg" alt="">
+						</a>
+						<p><a href="#">【花艺】七头美丽玫瑰仿真花束</a></p>
+						<a class="price" href="#">¥ 79.00</a>
+					</li> -->
+					
+				</ul>	
+				
+			</div>
+		</div>
+		<!-- 	content大图	 -->
+		<a href="#" class="a_bg">
+			<img src="img/ib1.jpg" alt="content大图">
+		</a>
+		<!-- 壁挂 北欧 -->
+		<div class="bg_bo">
+			<div class="wrapper_c">
+				<p>
+				<img src="img/ih3.jpg" alt="">
+				</p>	
+				
+				<ul class="ft_list">
+						<!-- <li>
+							<a href="#">
+								<img src="img/s1.jpg" alt="">
+							</a>
+							<p><a href="#">【花艺】七头美丽玫瑰仿真花束</a></p>
+							<a class="price" href="#">¥ 688.00</a>
+						</li> -->
+						
+					</ul>	
+				
+			</div>
+		</div>
+		<script>
+			$(function(){
+				pageone();
+				loadlist(3,12);
+			})
+
+		function pageone(){
+			$.post("/user/firstproduct",{"type":"1","pagesize":6},function(data){
+			
+					if(data.length>0){
+						var html="";
+
+						for(var i=0;i<data.length;i++){
+							html+="<li><a href='proDetail.html?prid="+data[i]["pr_id"]+"'><img onerror=\"this.src='img/product/1.jpg'\" src='"+data[i]["imgurl"]+"' alt='"+data[i]["title"]+"'></a><p><a href=\"#\">"+data[i]["title"]+"</a></p><a class=\"price\" href=\"#\">¥ "+data[i]["d_price"]+"</a></li>";
+						}	
+						$("#towlist").append(html);				
+
+					}
+			});
+		}	
+		/***/
+		function loadlist(type,pagesize){
+		$.post("/user/firstproduct",{"type":type,"pagesize":pagesize},function(data){
+			var html="";
+				for(var i=0;i<data.length;i++){
+					html+="<li><a href='proDetail.html?prid="+data[i]["pr_id"]+"'><img onerror=\"this.src='img/product/1.jpg'\" src=\""+data[i]["imgurl"]+"\" alt=''></a><p><a href='javacript:;'>"+data[i]["title"]+"</a></p><a class='price' href='javacript:;'>¥"+data[i]["d_price"]+"</a></li>"
+				}
+				$(".ft_list").html(html);
+				console.log(html)
+		})
+	}
+		</script>
+	</div>
+<!-- 尾部	 -->
+	<div class="footer">
+		
+	</div>
+	<script src="js/index.js"></script>
+ </body>
+</html>

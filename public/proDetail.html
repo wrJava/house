@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/proDetail.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/newpwd.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<!-- 固定定位 -->
+<div class="gd_img">
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="javascript:;"></a>
+    <a href="#"></a>
+</div>
+<!-- 头部 -->
+<div class="header">
+    
+</div>
+<!--内容部分-->
+<div id="detail_main" class="con_main" style="display: none;"> 
+    <div class="con_nav clearfix">
+        <a class="my_small" href="index.html">首页</a>
+        <span>/</span>
+        <a class="my_small" href="#">装饰摆件</a>
+        <span>/</span>
+        <a class="my_small" href="#">干花花艺</a>
+        <span>/</span>
+        <a class="my_small" href="#">【最家】非洲菊仿真花干花</a>
+    </div>
+</div>
+<!--左侧图-->
+<div class="wrapper_c" style="margin-top: 35px;">
+    <div class="pro_img">
+        <!-- 左侧图-->
+        <div class="pro_img_l f_l">
+            <img id="bigImg" src="img/temp/proDet02_big.jpg" alt=""/>
+            <ul class="pro_img_ul">
+
+                <!-- <li>
+                    <img src="img/temp/proDet01_big.jpg" alt=""/>
+                </li> -->
+                
+            </ul>
+        </div>
+        <!-- 右侧部分-->
+        <div class="pro_img_r f_r">
+            <div class="pro_img_r_d1">
+
+                <!-- <h2>【最家】非洲菊仿真花干花</h2>
+                <p>【破损补寄】【适合放室内、卧室、书房、餐桌、办公室、客厅、电视柜等地方】【无理由退换货】【包邮】【白色现代简约花瓶】</p>
+                <span>￥59.90</span> -->
+
+            </div>
+            <div class="pro_img_r_d2">
+                <p>颜色分类</p>
+                <ul class="colorList">
+                    <!-- <li>
+                        <img src="img/temp/prosmall01.jpg" alt=""/>
+                    </li> -->
+                    
+                </ul>
+                <p class="p1">
+                    数量&nbsp;&nbsp;库存<span id='kcun'>0</span>件
+                </p>
+                <div class="pro_img_r_d2_d">
+                    <img class="f_l" src="img/temp/sub.jpg" alt=""/>
+                    <span class="f_l" id="pronum">1</span>
+                    <img class="f_l" src="img/temp/add.jpg" alt=""/>
+                </div>
+            </div>
+            <!-- button按钮-->
+            <div class="pro_img_r_d3">
+                <input type="hidden" value="" id="prid">
+                <a class="f_l" href="#">立即购买</a>
+                <a class="f_r" style="color: #000;" onclick="addProduct()" href="#">加入购物车</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--商品详情-->
+<div id="pro_details" class="wrapper_c">
+    <div class="wrapper_c m_t50 clearfix">
+        <div class="de_t_l f_l">
+            <div class="de_t_top">
+                <a href="javascript:;">商品详情</a>
+                <a href="javascript:;">所有评价</a>
+            </div>
+            <div id="" class="de_t_l">
+                <!-- 商品详情 -->
+                <div class="pro_del_img">
+
+                    <!-- <img src="img/temp/det01.jpg" alt=""/> -->
+                
+                </div>
+                <!-- 评论 -->
+                <div class="pro_pinglun none">
+
+                    
+                    <!-- <div class="pl clearfix">
+                        <img class="f_l" src="img/temp/per01.jpg" alt="">
+                        <div class="pl_r f_l">
+                            <p>馨***呀</p>
+                            <p>不好意思评价晚了，产品很好，价格比玻璃品便宜，没有我担心的杂色，发货快，包装好，全5分</p>
+                            <ul>
+                                <li>
+                                   <a href="#"><img src="img/temp/eva01.jpg" alt=""></a> 
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/temp/eva02.jpg" alt=""></a> 
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/temp/eva03.jpg" alt=""></a> 
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/temp/eva04.jpg" alt=""></a> 
+                                </li>
+                                <li>
+                                    <a href="#"><img src="img/temp/eva05.jpg" alt=""></a> 
+                                </li>
+                            </ul>
+                            <p>
+                                <span class="s_c">2016年12月27日08:31</span>
+                                <span class="s_c">颜色分类：大中小三件套（不含花）</span>
+                            </p>
+                        </div>
+                    </div> -->
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="f_r de_r">
+            <h4>为你推荐</h4>
+            <div class="tuijian">
+
+               <!-- <a href="#">
+                    <dl>
+                        <dt>
+                            <img src="img/temp/see01.jpg" alt="">
+                        </dt>
+                        <dd>[最家]复古文艺风玻璃花瓶</dd>
+                        <dd>￥193.20</dd>
+                    </dl>
+                </a>  -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部轮播-->
+<div id="footLunbo" class="gesslike">
+    <p>猜你喜欢</p>
+    <span class="prev_p prev_left f_l"><img class="prev" src="img/temp/prev.png" alt=""></span>
+    <div class="outlunbo">
+        <ul>
+
+                <!-- <li>
+                    <a href="javascript:;"><img src="img/temp/like01.jpg" alt=""> </a>
+                    <a href="javascript:;"><span class="m10">【最家】复古文艺风玻璃花瓶</span></a>
+                    <span class="m10">￥193.20</span>
+                </li> -->
+                
+        </ul>
+        <script>
+           var timer1=setTimeout(slideli,2000);
+           var islock=false;
+            $(function(){
+               
+                $(".prev_left").on("click",function(){
+                    if(islock){
+                        return;
+                    }
+
+                    clearTimeout(timer1); slideli() });
+                $(".prev_right").on("click",function(){
+                    if(islock){
+                        return;
+                    }
+                    clearInterval(timer1);
+                    slideright();
+                });
+
+            })
+           function slideright(){
+               islock=true;
+               $(".outlunbo ul").prepend($(".outlunbo li:last-child")).css("margin-left","-236px")
+                   .animate({"margin-left":"0px"},1000,"linear",function(){
+                   timer1=setTimeout(slideright,2000);
+                   islock=false;});
+
+           }
+
+            function slideli(){
+                islock=true;
+                $(".outlunbo ul").animate({marginLeft:"-236px"},1000,"linear",function(){
+                    $(this).find("li:first-child").appendTo($(this));
+                    //$(this).append($(this).find("li:first-child"));
+                    $(this).css("margin-left","0px");
+                    timer1=setTimeout(slideli,2000);
+                    islock=false;
+                });
+            }
+        </script>
+    </div>
+    <span class="prev_p prev_right f_r"><img  class="prev" src="img/temp/next.png" alt=""></span>
+</div>
+<!-- 尾部	 -->
+<div class="footer" style="clear: both">
+   
+</div>
+<script>
+    $(function(){
+        var id=GetQueryString("prid");
+        proDetail(id);
+        refmsg(id);
+        tuijian(id);
+        lovee(id);
+        imgList(id);
+        $(".de_t_top a:last-child").click(function(){
+            $(".pro_pinglun").show();
+            $(".pro_del_img").hide();
+        })
+        $(".de_t_top a:first-child").click(function(){
+            $(".pro_del_img").show();
+            $(".pro_pinglun").hide();
+        })
+        var no=$(".pro_img_r_d2_d>span").text();
+        $(".pro_img_r_d2_d img:first-child").click(function(){
+            if(no>1){
+                no--;
+                $(".pro_img_r_d2_d>span").text(no);
+            };
+        })
+        $(".pro_img_r_d2_d img:last-child").click(function(){
+            if(no<5){
+                no++;
+                $(".pro_img_r_d2_d>span").text(no);
+            };
+        })
+    })
+    function GetQueryString(name)
+    {
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
+     if(r!=null)return  unescape(r[2]); return null;
+    }
+    function proDetail(pid){        
+        $.post("/user/details",{"id":pid},function(data){
+            var html="";
+         
+            for(var i=0;i<data.length;i++){
+                html+="<h2>"+data[i]["subtitle"]+"</h2><p>"+data[i]["details"]+"</p><span￥"+data[i]["d_price"]+"</span>";
+            }
+            $(".pro_img_r_d1").html(html);
+        })
+    }
+    function refmsg(prid){
+        $.post("/user/refmsg",{"id":1},function(data){
+           // console.log(data,"评论")
+            var html="";
+            for(var i=0;i<data.length;i++){
+                html+="<div class=\"pl clearfix\"><img onerror=\"this.src='/img/tx.png'\" class=\"f_l u_headers\" src=\""+data[i]["user_head"]+"\" alt=\"\"><div class=\"pl_r f_l\"><p>"+subusername(data[i]["username"])+"</p> <p>"+data[i]["s_content"]+"</p><ul>";
+                   var strlist =  data[i]['p_img'].split(',');
+                   for(var j=0;j<strlist.length;j++){
+                        html+="<li><a href=\"javascript:;\"><img onerror=\"$(this).parents('li').remove()\" src=\""+strlist[j]+"\" alt=\"\"></a> </li>";
+                   }
+               
+                html+=" </ul> <p><span class=\"s_c\">"+todata(data[i]["s_time"])+"</span><span class=\"s_c\" style=\"display:none\">颜色分类：大中小三件套（不含花）</span></p></div></div>";
+            }
+            $(".pro_pinglun").html(html);
+        })
+    }
+
+    function subusername(username){
+        if(username.length<=0||username==undefined){
+            return "****";
+        }
+        else if(username.length<=3){
+       return username.substr(0,1)+"**";
+    }else{
+        return username.substr(0,2)+"**";
+    }
+
+    }
+
+    function todata(rs){
+        return  rs.replace("T"," ").replace(".000Z","");
+
+    }
+     function tuijian(tid){
+        $.post("/user/tuijian",{"id":tid},function(data){
+            //console.log(data,"为你推荐")
+             var html="";
+             for(var i=0;i<data.length;i++){
+                 html+="<a href='javascript:;'><dl><dt><img src='"+data[i].imgurl+"' alt=''></dt><dd>"+data[i].title+"</dd><dd>￥"+data[i].d_price+"</dd></dl></a>";
+             }
+             $(".tuijian").html(html);
+         })
+     }
+    function lovee(lid){
+        $.post("/user/love",{"id":lid},function(data){
+            var html="";
+            for(var i=0;i<data.length;i++){
+                html+="<li><a href='javascript:;'><img src='"+data[i].imgurl+"' alt=''></a><a href='javascript:;'><span class='m10'>"+data[i].title+"</span></a><span class='m10'>￥"+data[i].d_price+"</span></li>"
+            }
+            //console.log(data,44444,"猜你喜欢")
+            $(".outlunbo ul").html(html);
+            $(".outlunbo ul").width($(".outlunbo li").length*216+"px");
+            // console.log(html+"asfasffs")
+        })
+    }
+    function imgList(Iid){
+        $.post("/user/imglist",{"id":Iid},function(data){
+            console.log(data,"图片列表")
+            var html="";
+            for(var i=0;i<data.length;i++){
+                html+="<li><img src=\""+data[i]["imgurl"]+"\" num=\""+data[i]["pcount"]+"\" alt=\"\"/></li> "
+                if(i==0){
+                    $("#bigImg").attr("src",data[i]["imgurl"]);
+                }
+            }
+            $(".pro_img_ul,.colorList,.pro_del_img").html(html);
+            $(".pro_img_ul img,.colorList img").click(function(){
+                $("#bigImg").attr("src",$(this).attr("src")) ;
+                $("#kcun").html($(this).attr("num"));
+         })
+            
+        })
+    }
+    function addProduct(){
+        var id=GetQueryString("prid");
+        var amount=$("").html();
+        var num=$("#pronum").html();
+        $.post("/project/addcard",{"prid":id,"num":num},function(data){
+            if(data=="-1"){
+                window.location="/login.html?fromurl=/proDetail.html?prid="+id;
+            }else{
+                alert("加入购物车成功");
+                window.location="/cart.html";
+            }
+        })
+    }
+</script>
+</body>
+</html>
